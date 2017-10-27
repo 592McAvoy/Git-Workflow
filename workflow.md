@@ -11,7 +11,7 @@
   - Mutiple Git Workflows    
      + Centralized Workflow
      + Feature Branch Workflow
-     + Gitflow
+     + Git flow
      + Forking Workflow
      + Github Flow
 
@@ -53,4 +53,43 @@ This workflow doesn’t require any other branches besides master.
 - Developers can edit, stage, and commit changes to a feature branch.
 - Pull request to Resolve feedback
 - Merge the pull request to server
+
+###3. Git flow
+>The Gitflow Workflow defines a strict branching model designed around the project **release**.
+
+>In addition to feature branches, it uses **individual branches** for preparing, maintaining, and recording releases.
+
+---
+![](http://a1.qpic.cn/psb?/V13Ti98m05LW5b/PMUjFL*8QXWXZNgCLYo0aNChyoJJWmHC0rpa8zTMblA!/b/dPMAAAAAAAAA&bo=gAJQAwAAAAADAPQ!&rf=viewer_4)
+####3.1 Two long-term branches
+
+Instead of a single master branch, this workflow uses two branches to record the history of the project.
+ 
+- **master** branch stores the official release history
+
+- **develop** branch serves as an integration branch for features.
+####3.2 Three short-term branches
+#####3.2.1 feature branches
+Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration.
+
+ But, instead of branching off of master, feature branches use **develop** as their parent branch. When a feature is complete, it gets merged back into develop. Features should never interact directly with master.
+#####3.2.2 release branches
+release branches are based on the **develop** branch. 
+
+Once develop has acquired enough features for a release (or a predetermined release date is approaching), developer can fork a release branch off of develop.
+
+Once the release is ready to ship, it will get merged it into ****master** and develop**, then the release branch will be deleted.
+##### 3.2.3 hotfixes
+
+Maintenance or hotfix branches are based on **master** instead of develop. As soon as the fix is complete, it should be merged into both master and develop (or the current release branch), and master should be tagged with an updated version number.
+
+---
+###4.Forking Workflow
+Instead of using a single server-side repository to act as the “central” codebase, it gives every developer their own server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.
+1.	A developer 'forks' an 'official' server-side repository as their own server-side copy.
+2.	The new server-side copy is cloned to their local system.
+The developer makes changes on the new branch and they push the commit to their own public repository
+3.	The developer opens a pull request from the new branch to the 'official' repository.
+4.	The pull request gets approved for merge and is merged into the original server-side repository
+
 
