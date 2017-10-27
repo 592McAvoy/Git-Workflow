@@ -14,6 +14,7 @@
      + Git flow
      + Forking Workflow
      + Github Flow
+  - Reference
 
 ##Ⅱ. What is a Git Workflow
 > flow - the act of flowing or streaming; continuous progression 
@@ -85,11 +86,37 @@ Maintenance or hotfix branches are based on **master** instead of develop. As so
 
 ---
 ###4.Forking Workflow
-Instead of using a single server-side repository to act as the “central” codebase, it gives every developer their own server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.
-1.	A developer 'forks' an 'official' server-side repository as their own server-side copy.
-2.	The new server-side copy is cloned to their local system.
-The developer makes changes on the new branch and they push the commit to their own public repository
-3.	The developer opens a pull request from the new branch to the 'official' repository.
-4.	The pull request gets approved for merge and is merged into the original server-side repository
+>Instead of using a single server-side repository to act as the “central” codebase, it gives every developer their own server-side repository. This means that each contributor has not one, but two Git repositories: a **private local one** and a **public server-side one**.
+
+![](http://a3.qpic.cn/psb?/V13Ti98m05LW5b/mMHlI*8JZ8ozPRqNEX5tDxPvvHrNeC8f4y98lFCHsB0!/b/dPIAAAAAAAAA&bo=kAFYAQAAAAADAO0!&rf=viewer_4)
+####Procedure
+
+- A developer 'forks' an 'official' server-side repository as their own server-side copy.
+- The new server-side copy is cloned to their local system.
+- The developer makes changes on the new branch and then push the commit to his own public repository
+- The developer opens a pull request from the new branch to the 'official' repository.
+- The pull request gets approved for merge and is merged into the original server-side repository
+
+###5. Github flow
+>GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly.
+
+---
+![](http://a1.qpic.cn/psb?/V13Ti98m05LW5b/gt3H413IzZ63i4nUPMM2tdi3x.UUNec8hciUQaEqMFU!/b/dPMAAAAAAAAA&bo=YATOAAAAAAADAI8!&rf=viewer_4)
+
+####Procedure
+
+- Create a branch to experiment and commit changes
+- Add, edit, or delete a file, then make a commit, and add them to branch.
+- Open a Pull Request at any point during the development process to initiate discussion about the commits
+- Discuss and review code to fix bugs in the branch and push up the change
+- Once the pull request has been reviewed and the branch passes all tests,  deploy changes to verify them in production and merge the code into the master branch
+
+##Ⅳ. Reference
+- [深入理解学习Git工作流](https://segmentfault.com/a/1190000002918123#articleHeader20)
+- [A successful Git branching model » nvie.com ](http://nvie.com/posts/a-successful-git-branching-model/?utm_source=qq&utm_medium=social)
+- [Understanding the GitHub Flow · GitHub Guides]( https://guides.github.com/introduction/flow/?utm_source=qq&utm_medium=social)
+- [git-workflow-tutorial]( https://www.atlassian.com/git/tutorials/comparing-workflows)
+- [Git 工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+
 
 
