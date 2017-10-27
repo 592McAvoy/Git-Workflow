@@ -69,6 +69,8 @@ Instead of a single master branch, this workflow uses two branches to record the
 - **master** branch stores the official release history
 
 - **develop** branch serves as an integration branch for features.
+
+
 ####3.2 Three short-term branches
 #####3.2.1 feature branches
 Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration.
