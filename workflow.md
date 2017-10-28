@@ -1,5 +1,6 @@
-#A Brief Introduction of Git Workflow
----
+A Brief Introduction of Git Workflow
+-
+
 ![](http://a2.qpic.cn/psb?/V13Ti98m05LW5b/wdUTgWXi46p7z5ctjgUJOhQUXy0gQjpTsNhdY7TujhU!/b/dD8BAAAAAAAA&bo=yAFPAQAAAAADB6U!&rf=viewer_4)
 
 
@@ -123,7 +124,8 @@ Procedure
 - Discuss and review code to fix bugs in the branch and push up the change
 - Once the pull request has been reviewed and the branch passes all tests,  `deploy` changes to verify them in production and merge the code into the master branch
 <br>
-##Ⅳ. Reference
+Ⅳ. Reference
+-
 - [深入理解学习Git工作流](https://segmentfault.com/a/1190000002918123#articleHeader20)
 - [A successful Git branching model » nvie.com ](http://nvie.com/posts/a-successful-git-branching-model/?utm_source=qq&utm_medium=social)
 - [Understanding the GitHub Flow · GitHub Guides]( https://guides.github.com/introduction/flow/?utm_source=qq&utm_medium=social)
